@@ -80,7 +80,7 @@ namespace MvcMovie.Controllers
     // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("ID,Genre,Price,ReleaseDate,Title")] Movie movie)
+    public async Task<IActionResult> Create([Bind("ID,Genre,Price,ReleaseDate,Title, Rating")] Movie movie)
     {
       if (ModelState.IsValid)
       {
